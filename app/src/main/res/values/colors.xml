@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a036ce</color>
+    <color name="colorPrimaryDark">#e77bea</color>
+    <color name="colorAccent">#e954be</color>
+
+    <color name="darkPurple">#6125ab</color>
+    <color name="whitepurple">#24a425ab</color>
+    <color name="whitepurple2.0">#1da425ab</color>
+    <color name="black">#000000</color>
+    <color name="red">#f90115</color>
+    <color name="grass">#1eff00</color>
+    <color name="orange">#ff3c00</color>
+    <color name="gold">#ab9508</color>
+</resources>

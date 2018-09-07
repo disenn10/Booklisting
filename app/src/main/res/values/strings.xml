@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BookListing</string>
+    <string name="recommended">Recommended for you</string>
+    <string name="magazines">Magazines</string>
+    <string name="sports">Sports</string>
+    <string name="home">Home</string>
+    <string name="main_settings">Settings</string>
+    <string name="night">Night mode</string>
+    <string name="night_key">night_key</string>
+    <string name="default_bg">default_bg</string>
+    <string name="search">Search</string>
+    <string name="summary">Summary</string>
+    <string name="more_details">More details</string>
+    <string name="settings">Settings</string>
+    <string name="search_settings">Search_settings</string>
+    <string name="max">Max results</string>
+    <string name="forty">40</string>
+    <string name="thirty">30</string>
+    <string name="twenty">20</string>
+    <string name="ten">10</string>
+
+    <string name="forty_label">Forty</string>
+    <string name="thirty_label">Thirty</string>
+    <string name="twenty_label">Twenty</string>
+    <string name="ten_label">Ten</string>
+    <string name="max_key" translatable="false">max_key</string>
+    <string-array name="max_results_options_values">
+        <item>@string/forty</item>
+        <item>@string/thirty</item>
+        <item>@string/twenty</item>
+        <item>@string/ten</item>
+    </string-array>
+    <string-array name="max_results_options">
+        <item>@string/forty_label</item>
+        <item>@string/thirty_label</item>
+        <item>@string/twenty_label</item>
+        <item>@string/ten_label</item>
+    </string-array>
+
+</resources>

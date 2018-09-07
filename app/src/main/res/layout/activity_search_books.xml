@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_books"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.disen.booklisting.SearchBooks">
+
+    <EditText
+        android:layout_width="@dimen/hunnid_seventy"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/search_author"
+        android:hint="Search author"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/progres"
+        android:max="100"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:progress="40"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:layout_width="@dimen/hunnid_seventy"
+        android:layout_below="@+id/search_author"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/search_title"
+        android:hint="Search title"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/search_title"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/search_button"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:text="search"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/results"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/search_button"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/results"
+        android:id="@+id/list_books_found"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/five"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/five"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/gohome"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_black_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="Home"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/gotosearch"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="Search"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

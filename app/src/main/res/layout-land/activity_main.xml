@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/whitepurple"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.disen.booklisting.MainActivity">
+
+    <RelativeLayout
+        android:background="@color/whitepurple"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:id="@+id/recomended"
+            style="@style/linear_style_main">
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/rec"
+                android:layout_weight="2.8"
+                android:textColor="@color/darkPurple"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="@string/recommended"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/ten"
+            android:layout_below="@+id/recomended"
+            android:id="@+id/empty_recommended"
+            android:layout_height="wrap_content" />
+
+        <Gallery
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/recomended"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:id="@+id/recommended_gallery"
+            android:layout_height="wrap_content">
+
+        </Gallery>
+
+
+        <LinearLayout
+            style="@style/linear_style_main"
+            android:layout_below="@+id/recommended_gallery"
+            android:id="@+id/magazine">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.8"
+                android:id="@+id/mag"
+                android:textColor="@color/darkPurple"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="@string/magazines"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/magazine"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/ten"
+            android:id="@+id/empty_mags"
+            android:layout_height="wrap_content" />
+
+        <Gallery
+            android:layout_width="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/magazine"
+            android:layout_height="wrap_content"
+            android:id="@+id/magazines_gallery"></Gallery>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:id="@+id/progress"
+            android:max="100"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:progress="40"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/internet"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/linear_style_main"
+            android:layout_below="@+id/magazines_gallery"
+            android:id="@+id/sports">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.8"
+                android:id="@+id/sport"
+                android:textColor="@color/darkPurple"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="@string/sports"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/sports"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/ten"
+            android:id="@+id/empty_sports"
+            android:layout_height="wrap_content" />
+
+        <Gallery
+            android:layout_width="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/sports"
+            android:layout_height="wrap_content"
+            android:id="@+id/sports_gallery"></Gallery>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/five"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="@dimen/five"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:id="@+id/gohome"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_black_36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/home"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:id="@+id/gotosearch"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_black_36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/search"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

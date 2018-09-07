@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/max_results_options"
+        android:defaultValue="@string/forty"
+        android:entryValues="@array/max_results_options_values"
+        android:title="@string/max"
+        android:key="@string/max_key">
+
+    </ListPreference>
+
+</PreferenceScreen>
